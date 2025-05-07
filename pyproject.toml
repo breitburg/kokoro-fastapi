@@ -95,3 +95,6 @@ testpaths = ["api/tests", "ui/tests"]
 python_files = ["test_*.py"]
 addopts = "--cov=api --cov=ui --cov-report=term-missing --cov-config=.coveragerc --full-trace" 
 asyncio_mode = "auto"
+
+[tool.uv]
+override-dependencies = ["phonemizer-fork==3.3.2"]
